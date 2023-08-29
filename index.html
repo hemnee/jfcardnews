@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>일본편의점먹킷리스트</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .mySwiper {
+            margin: 70px auto;
+            width: 1000px;
+            text-align: center;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: rgb(170, 135, 89);
+        }
+
+        body {
+            background: url(./img/bg.jpg) no-repeat center top;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/_1.jpg" alt="카드뉴스"></div>
+            <div class="swiper-slide"><img src="./img/_2.jpg" alt="카드뉴스"></div>
+            <div class="swiper-slide"><img src="./img/_3.jpg" alt="카드뉴스"></div>
+            <div class="swiper-slide"><img src="./img/_4.jpg" alt="카드뉴스"></div>
+            <div class="swiper-slide"><img src="./img/_5.jpg" alt="카드뉴스"></div>
+            <div class="swiper-slide"><img src="./img/_6.jpg" alt="카드뉴스"></div>
+            <div class="swiper-slide"><img src="./img/_7.jpg" alt="카드뉴스"></div>
+            <div class="swiper-slide"><img src="./img/_8.jpg" alt="카드뉴스"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
